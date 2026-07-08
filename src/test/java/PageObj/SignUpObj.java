@@ -74,9 +74,42 @@ public class SignUpObj {
 	        return driver.findElement(FIRSTNAME_XPATH).getAttribute("validationMessage");
 	    }
 
+	    public String getLastNameValidationMessage() {
+	        return driver.findElement(LASTNAME_XPATH).getAttribute("validationMessage");
+	    }
+
 	    public String getEmailValidationMessage() {
 	        return driver.findElement(EMAIL_XPATH).getAttribute("validationMessage");
 	    }
+
+	    public String getPasswordValidationMessage() {
+	        return driver.findElement(PASSWORD_XPATH).getAttribute("validationMessage");
+	    }
+
+	    public String getConfirmPasswordValidationMessage() {
+	        return driver.findElement(CONFIRM_PASSWORD_XPATH).getAttribute("validationMessage");
+	    }
+	    public void enterFirstName(String firstName) {
+	        driver.findElement(FIRSTNAME_XPATH).sendKeys(firstName);
+	    }
+
+	    public void enterLastName(String lastName) {
+	        driver.findElement(LASTNAME_XPATH).sendKeys(lastName);
+	    }
+
+	    public void enterEmail(String email) {
+	        driver.findElement(EMAIL_XPATH).sendKeys(email);
+	    }
+
+	    public void enterPassword(String password) {
+	        driver.findElement(PASSWORD_XPATH).sendKeys(password);
+	    }
+
+	    public void enterConfirmPassword(String confirmPassword) {
+	        driver.findElement(CONFIRM_PASSWORD_XPATH).sendKeys(confirmPassword);
+	    }
+	    
+	    
 
 	    public void enterSignupDetails(String firstName, String lastName, String email, String password, String confirmPassword) {
 	        driver.findElement(FIRSTNAME_XPATH).sendKeys(firstName);
