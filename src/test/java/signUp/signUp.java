@@ -84,21 +84,13 @@ public class signUp extends ParentSignup{
 		@Test(priority = 2, description = "Verify sequential field validations for all form fields.")
 		public void testSequentialFieldValidationEXL() throws FileNotFoundException, IOException {
 			
-			
-			String path = "/home/user/Desktop/TestData.xlsx";
-			// FIX 1: You must instantiate the formatter object here!
-	        DataFormatter formatter = new DataFormatter();
-			
-			
-			try (FileInputStream fis = new FileInputStream(path);
+			DataFormatter formatter = new DataFormatter();			
+			try (FileInputStream fis = new FileInputStream(GetValue("cmn", "exfile"));
 		             Workbook workbook = new XSSFWorkbook(fis)) {
-
 		            // Get the first sheet
 		            Sheet sheet = workbook.getSheet("Sheet2");
-		            int totalColumns = sheet.getRow(0).getLastCellNum();
-		            
-		            
-		            
+		            int totalColumns = sheet.getRow(0).getLastCellNum();          
+		            	            
 		            for (int i = 1; i <= sheet.getLastRowNum(); i++) {	
 		            	driver.navigate().refresh();
 		        		Row row = sheet.getRow(i);
@@ -120,8 +112,7 @@ public class signUp extends ParentSignup{
 						String lname = formatter.formatCellValue(row.getCell(1));
 						String email = formatter.formatCellValue(row.getCell(2));
 						String password = formatter.formatCellValue(row.getCell(3));
-						String conf_pass = formatter.formatCellValue(row.getCell(4));
-	                                       
+						String conf_pass = formatter.formatCellValue(row.getCell(4));                        
 
 						signupPage.enterFirstName(fname);
 
