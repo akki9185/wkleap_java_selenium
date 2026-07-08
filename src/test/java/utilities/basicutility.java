@@ -26,7 +26,6 @@ public class basicutility extends BaseInt {
 			String validationMessage = signupPage.getFirstNameValidationMessage();
 	        Assert.assertNotNull(validationMessage, "Validation message attribute is missing");
 	        Assert.assertFalse(validationMessage.isEmpty(), "No validation message shown for empty First Name");
-	
 }
 	
 

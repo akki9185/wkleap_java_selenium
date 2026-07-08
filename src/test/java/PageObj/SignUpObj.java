@@ -4,6 +4,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -27,6 +28,28 @@ public class SignUpObj {
 	   public SignUpObj(WebDriver driver) {
 	        this.driver = driver;
 	        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	    }
+	   
+	   
+	   
+	   public WebElement firstName() {
+	    	return driver.findElement(FIRSTNAME_XPATH);
+	    }
+
+	    public WebElement lastName() {
+	    	return driver.findElement(LASTNAME_XPATH);
+	    }
+
+	    public WebElement email() {
+	    	return driver.findElement(EMAIL_XPATH);
+	    }
+
+	    public WebElement passwrd() {
+	    	return driver.findElement(PASSWORD_XPATH);
+	    }
+
+	    public WebElement ConfirmPassword() {
+	    	return driver.findElement(CONFIRM_PASSWORD_XPATH);
 	    }
 	   
 	   public void waitForPageLoad() {
