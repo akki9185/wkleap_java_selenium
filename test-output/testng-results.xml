@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-07-08T14:43:58 IST" name="Default suite" finished-at="2026-07-08T14:44:04 IST" duration-ms="5349">
+  <suite started-at="2026-07-08T18:41:45 IST" name="Default suite" finished-at="2026-07-08T18:44:08 IST" duration-ms="143386">
     <groups>
     </groups>
-    <test started-at="2026-07-08T14:43:58 IST" name="Default test" finished-at="2026-07-08T14:44:04 IST" duration-ms="5349">
+    <test started-at="2026-07-08T18:41:45 IST" name="Default test" finished-at="2026-07-08T18:44:08 IST" duration-ms="143386">
       <class name="signUp.signUp">
-        <test-method is-config="true" signature="setupSignup()[pri:0, instance:signUp.signUp@4550bb58]" started-at="2026-07-08T14:43:58 IST" name="setupSignup" finished-at="2026-07-08T14:44:02 IST" duration-ms="3837" status="PASS">
+        <test-method is-config="true" signature="setupSignup()[pri:0, instance:signUp.signUp@78e4deb0]" started-at="2026-07-08T18:41:45 IST" name="setupSignup" finished-at="2026-07-08T18:41:49 IST" duration-ms="4354" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupSignup -->
-        <test-method signature="testSequentialFieldValidation()[pri:5, instance:signUp.signUp@4550bb58]" started-at="2026-07-08T14:44:02 IST" name="testSequentialFieldValidation" description="Verify sequential field validations for all form fields." finished-at="2026-07-08T14:44:04 IST" duration-ms="1336" status="PASS">
+        <test-method signature="testSequentialFieldValidationEXL()[pri:2, instance:signUp.signUp@78e4deb0]" started-at="2026-07-08T18:41:49 IST" name="testSequentialFieldValidationEXL" description="Verify sequential field validations for all form fields." finished-at="2026-07-08T18:44:08 IST" duration-ms="138849" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSequentialFieldValidation -->
-        <test-method is-config="true" signature="aftrcls()[pri:0, instance:signUp.signUp@4550bb58]" started-at="2026-07-08T14:44:04 IST" name="aftrcls" finished-at="2026-07-08T14:44:04 IST" duration-ms="133" status="PASS">
+        </test-method> <!-- testSequentialFieldValidationEXL -->
+        <test-method is-config="true" signature="aftrcls()[pri:0, instance:signUp.signUp@78e4deb0]" started-at="2026-07-08T18:44:08 IST" name="aftrcls" finished-at="2026-07-08T18:44:08 IST" duration-ms="124" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftrcls -->
